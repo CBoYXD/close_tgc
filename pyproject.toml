@@ -1,0 +1,23 @@
+[project]
+name = "rust-digest-bot"
+version = "0.1.0"
+description = "Telegram bot for selling access to a private Rust programming channel"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram>=3.22.0",
+    "aiogram-dialog>=2.4.0",
+    "aiohttp>=3.12.15",
+    "alembic>=1.17.1",
+    "alembic-postgresql-enum>=1.8.0",
+    "apscheduler>=3.11.1",
+    "asyncpg>=0.30.0",
+    "black>=25.11.0",
+    "isort>=7.0.0",
+    "jinja2>=3.1.6",
+    "pydantic>=2.11.10",
+    "pydantic-settings>=2.12.0",
+    "redis>=7.0.1",
+    "ruff>=0.14.4",
+    "sqlalchemy>=2.0.44",
+]

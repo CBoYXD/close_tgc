@@ -1,0 +1,15 @@
+📊 <b>Загальна статистика</b>
+
+👥 Усього користувачів: {{ total_users }}
+✅ Підключились: {{ connected_count }} ({{ conversion_rate }}%)
+❌ Не завершили: {{ total_users - connected_count }}
+
+🌐 <b>За джерелами трафіку:</b>
+{{ utm_sources_text }}
+
+📈 <b>UTM-аналітика:</b>
+• Усього кліків: {{ utm_stats.total_clicks }}
+• Реєстрацій: {{ utm_stats.total_registrations }}
+• Підключень: {{ utm_stats.total_connections }}
+• Конверсія в реєстрацію: {{ utm_stats.registration_rate }}%
+• Конверсія в підключення: {{ utm_stats.connection_rate }}%

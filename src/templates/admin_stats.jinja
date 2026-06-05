@@ -1,0 +1,12 @@
+📊 <b>Загальна статистика</b>
+
+👥 <b>Користувачі:</b>
+• Усього: {{ total_users }}
+• Підключено: {{ connected_count }}
+• Конверсія: {{ conversion_rate }}%
+• Заблокували бота: {{ blocked_count }}
+
+📈 <b>За джерелами:</b>
+{% if utm_sources_text %}{{ utm_sources_text }}{% else %}• Немає даних{% endif %}
+
+🔄 <b>Останнє оновлення:</b> {{ last_update }}

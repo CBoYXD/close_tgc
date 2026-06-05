@@ -1,0 +1,13 @@
+📊 <b>UTM-аналітика</b>
+
+📈 <b>Загальна статистика:</b>
+• Усього кліків: {{ utm_stats.total_clicks }}
+• Реєстрацій: {{ utm_stats.total_registrations }}
+• Підключень: {{ utm_stats.total_connections }}
+• Конверсія в реєстрацію: {{ utm_stats.registration_rate }}%
+• Конверсія в підключення: {{ utm_stats.connection_rate }}%
+
+📊 <b>За джерелами:</b>
+{% for stat in analytics %}
+• {{ stat.utm_source }} ({{ stat.utm_campaign }}): {{ stat.connections }}/{{ stat.total_clicks }} ({{ stat.connection_rate }}%)
+{% endfor %}
